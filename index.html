@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+    <nav id="main-menu" style="padding-top: 20px;">
+        <ul>
+            <li><a class="obss-scroller" href="#section1">Home</a></li>
+            <li><a class="obss-scroller" href="#section2">Gallery</a></li>
+            <li><a class="obss-scroller" href="#section3">About</a></li>
+            <li><a class="obss-scroller" href="#section4">Contact</a></li>
+            <li><a class="obss-scroller" href="#section5">Team</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <h1>Smooth scroll with parallax</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius quo, nobis culpa inventore debitis beatae? Quam voluptatem maiores adipisci numquam nesciunt facilis perferendis iste quod! Ad vero cumque perferendis vel praesentium libero ducimus facilis aliquid nobis accusantium quasi iste labore voluptate, molestiae esse. Saepe unde eveniet accusamus incidunt architecto pariatur ad, veritatis perferendis magni?
+        </p>
+    </section>
+
+    <section id="section2">
+        <h1>New Design and Innonative</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius quo, nobis culpa inventore debitis beatae? Quam voluptatem maiores adipisci numquam nesciunt facilis perferendis iste quod! Ad vero cumque perferendis vel praesentium libero ducimus facilis aliquid nobis accusantium quasi iste labore voluptate, molestiae esse. Saepe unde eveniet accusamus incidunt architecto pariatur ad, veritatis perferendis magni?
+        </p>
+    </section>
+
+    <section id="section3">
+        <h1>Parallx works more faster</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius quo, nobis culpa inventore debitis beatae? Quam voluptatem maiores adipisci numquam nesciunt facilis perferendis iste quod! Ad vero cumque perferendis vel praesentium libero ducimus facilis aliquid nobis accusantium quasi iste labore voluptate, molestiae esse. Saepe unde eveniet accusamus incidunt architecto pariatur ad, veritatis perferendis magni?
+        </p>
+    </section>
+
+    <section id="section4">
+        <h1>Very easy turorial</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius quo, nobis culpa inventore debitis beatae? Quam voluptatem maiores adipisci numquam nesciunt facilis perferendis iste quod! Ad vero cumque perferendis vel praesentium libero ducimus facilis aliquid nobis accusantium quasi iste labore voluptate, molestiae esse. Saepe unde eveniet accusamus incidunt architecto pariatur ad, veritatis perferendis magni?
+        </p>
+    </section>
+
+    <section id="section5">
+        <h1>Make the thing working</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius quo, nobis culpa inventore debitis beatae? Quam voluptatem maiores adipisci numquam nesciunt facilis perferendis iste quod! Ad vero cumque perferendis vel praesentium libero ducimus facilis aliquid nobis accusantium quasi iste labore voluptate, molestiae esse. Saepe unde eveniet accusamus incidunt architecto pariatur ad, veritatis perferendis magni?
+        </p>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("section").height($(window).height());
+            onWindowResize();
+
+            $(".obss-scroller").smoothScroller({
+                duration: 1000,
+                activeClass: "active"
+            });
+        });
+
+        var onWindowResize = function(){
+            $(window).resize(function(evt){
+                $("section").height($(window).height());
+            });
+        }
+    </script>
+
+
+
+</body>
+</html>
